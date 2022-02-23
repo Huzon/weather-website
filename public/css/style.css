@@ -9,6 +9,11 @@ h1 {
     width: fit-content;
 }
 
+img {
+    width: 400px;
+    /* height: 400px; */
+}
+
 a {
     text-align: center;
     color: darkgrey;
