@@ -3,6 +3,7 @@ console.log("Client side js is loaded");
 const weatherForm = document.querySelector("form");
 const searchText = document.querySelector("input");
 const responseDOM = document.querySelector("#response");
+const imgDOM = document.querySelector("#img");
 
 weatherForm.addEventListener("submit", (e) => {
     e.preventDefault(); //prevents default behavior of the form
@@ -17,6 +18,7 @@ weatherForm.addEventListener("submit", (e) => {
                 return (responseDOM.textContent = data.error);
             }
             responseDOM.textContent = `Temperature in ${data.location} is ${data.temperature}, it will feel like ${data.feelslike}`;
+            imgDOM.innerHTML = `<img src="${data.weather_icons[0]}">`;
         });
     });
 });

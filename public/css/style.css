@@ -14,6 +14,16 @@ img {
     /* height: 400px; */
 }
 
+div.img {
+    height: 200px;
+    width: 200px;
+}
+
+div.img img {
+    height: 100%;
+    width: 100%;
+}
+
 a {
     text-align: center;
     color: darkgrey;
